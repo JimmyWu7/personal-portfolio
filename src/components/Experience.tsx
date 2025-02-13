@@ -16,8 +16,8 @@ const Experience = () => {
           desc="Spearheaded backend development and cross-team collaboration to
             deliver key features, implemented security enhancements through API
             improvements and MFA."
-          referenceUrl="/JimmyWu-Backend-Developer-Django-Reference-Letter.pdf"
-          certificateUrl="/JimmyWu-SkyIT-Certificate.pdf"
+          referenceUrl="./JimmyWu-Backend-Developer-Django-Reference-Letter.pdf"
+          certificateUrl="./JimmyWu-SkyIT-Certificate.pdf"
         />
       </div>
     </div>
