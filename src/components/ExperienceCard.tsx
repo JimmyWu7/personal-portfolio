@@ -66,7 +66,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 href={referenceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-rubik underline text-white"
+                className={`text-sm font-rubik underline ${
+                  theme === "light" ? "text-[#1E1E1E]" : "text-white"
+                }`}
               >
                 Reference Letter
               </a>
