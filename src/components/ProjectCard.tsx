@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import { useTheme } from "./ThemeContext";
 
 interface ProjectCardProps {
   src: string | StaticImageData; // The image source, should be a string (URL or path)
@@ -18,25 +16,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   desc,
   extras,
 }) => {
-  const { theme, setTheme } = useTheme(); // Use theme from context
   return (
     <a
-      className="flex flex-col justify-center items-center gap-2 w-fit rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105"
+      className="flex flex-col gap-2 w-full max-w-[300px] rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105"
       href={link}
       target="_blank"
     >
       <Image
-        className={`${
-          theme === "light" ? "bg-white" : "bg-white"
-        } max-w-[250px] self-center rounded-2xl`}
+        className=" max-w-[250px] h-full self-center rounded-2xl"
         src={src}
         alt={`${name} Logo`}
         width={300}
         height={300}
       />
-      <h3 className="font-robotoMono text-2xl font-bold">{name}</h3>
-      <p className="font-robotoMono text-xl font-light">{desc}</p>
-      <p className="font-robotoMono text-sm font-light text-center w-2/3">
+      <h3 className="font-rubik text-2xl font-bold text-center">{name}</h3>
+      <p className="font-robotoMono text-lg font-light text-center">{desc}</p>
+      <p className="flex flex-wrap justify-center font-robotoMono text-sm font-light text-center">
         {extras}
       </p>
     </a>

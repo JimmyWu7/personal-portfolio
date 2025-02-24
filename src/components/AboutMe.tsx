@@ -42,17 +42,28 @@ const AboutMe = () => {
           </div>
         </div>
         {/* Description Text */}
-        <div className="flex-1 font-robotoMono text-base md:text-lg space-y-4 px-8 max-w-xl md:max-w-2xl">
+        <div className="flex-1 font-robotoMono text-base md:text-lg space-y-4 px-6 max-w-xl md:max-w-3xl">
           <p>
-            <span className="wave-emoji text-3xl transition-all duration-300 ease-in-out">
+            <span className="wave-emoji transition-all duration-300 ease-in-out">
               👋
             </span>{" "}
             Hello! I'm Jimmy Wu, a senior computer science student at University
             at Buffalo. I am interested in Full Stack Development, Web
             Development, Artificial Intelligence, and Machine Learning.
-            <br />
+          </p>
+          <p>
+            I particularly enjoy working with modern stacks like Next.js and
+            TypeScript, and recently built Bulls Parking Finder to solve parking
+            accessibility on UB campus. I am passionate about building scalable,
+            efficient solutions that enhance the user experience.
+          </p>
+          <p>
             When I'm not coding, you can find me playing Brawl Stars, Pokemon
             TCG Pocket, watching Anime and vibing to K-pop music.
+          </p>
+          <p className="text-xs md:text-sm italic text-gray-600 dark:text-gray-400">
+            (P.S. Want to team up in Brawl Stars? I've got your back, let's
+            connect!)
           </p>
         </div>
       </div>
