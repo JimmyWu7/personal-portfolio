@@ -52,10 +52,11 @@ const AboutMe = () => {
             Development, Artificial Intelligence, and Machine Learning.
           </p>
           <p>
-            I particularly enjoy working with modern stacks like Next.js and
-            TypeScript, and recently built Bulls Parking Finder to solve parking
-            accessibility on UB campus. I am passionate about building scalable,
-            efficient solutions that enhance the user experience.
+            I enjoy working with modern stacks like Next.js, React.js,
+            TypeScript, JavaScript and Twilwind CSS. Recently, I built Bulls
+            Parking Finder a project designed to improve parking accessibility
+            on UB campus. I am passionate about building scalable, efficient
+            solutions that enhance the user experience.
           </p>
           <p>
             When I'm not coding, you can find me playing Brawl Stars, Pokemon
