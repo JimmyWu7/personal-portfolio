@@ -34,7 +34,7 @@ const Contact = () => {
         </a>
         <a
           className="flex justify-center items-center gap-2 font-robotoMono hover:text-gray-500 md:text-lg ld:text-xl"
-          href="https://www.linkedin.com/in/JimmyWu"
+          href="https://www.linkedin.com/in/jimmywu7/"
           target="_blank"
         >
           <Image

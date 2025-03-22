@@ -65,7 +65,7 @@ const Hero = () => {
               alt="Github icon"
             />
           </a>
-          <a href="https://www.linkedin.com/in/JimmyWu" target="_blank">
+          <a href="https://www.linkedin.com/in/jimmywu7/" target="_blank">
             <Image
               className="w-8 transition-transform duration-200 ease-in-out hover:scale-105"
               src={theme === "light" ? linkedinLight : linkedinDark}
@@ -77,7 +77,7 @@ const Hero = () => {
           Code. Create. Collaborate.
         </p>
         <div className="flex flex-row gap-8">
-          <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="./JimmyWu-Resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="flex items-center gap-2 bg-blue-400 text-white text-xl w-full h-12 py-2 px-8 font-rubik font-bold rounded-2xl shadow-md transition ease-in-out duration-200 hover:bg-blue-500 hover:scale-105 hover:shadow-lg">
               Resume
               <Image
