@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 
-import checkMarkIconDark from "../assets/checkmark-dark.svg";
-import checkMarkIconLight from "../assets/checkmark-light.svg";
+import checkMarkIconDark from "../assets/icons/checkmark-dark.svg";
+import checkMarkIconLight from "../assets/icons/checkmark-light.svg";
 import SkillsList from "./SkillsList";
 import { useTheme } from "./ThemeContext";
 
@@ -10,8 +10,8 @@ const Skills = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="flex flex-col">
-      <h1 className="font-rubik text-center text-3xl font-extrabold uppercase md:text-5xl mb-8 md:mb-14">
+    <div id="skills" className="flex flex-col">
+      <h1 className="font-rubik text-center text-3xl font-extrabold uppercase md:text-5xl 2xl:text-7xl mb-8 md:mb-14">
         Skills
       </h1>
       <div className="flex flex-wrap justify-evenly self-center gap-8 max-w-[26ch] md:max-w-fit lg:gap-12">
@@ -31,6 +31,10 @@ const Skills = () => {
         <SkillsList
           src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
           skill="TypeScript"
+        />
+        <SkillsList
+          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+          skill="Dart"
         />
         <SkillsList
           src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
@@ -132,6 +136,10 @@ const Skills = () => {
         <SkillsList
           src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
           skill="VS Code"
+        />
+        <SkillsList
+          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+          skill="Android Studio"
         />
         <SkillsList
           src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}

@@ -5,10 +5,11 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-14 mb-14 md:gap-36 lg:gap-48 md:mx-[60px]">
+    <div className="flex flex-col gap-14 mb-16 md:gap-36 lg:gap-48 md:mx-16">
       <Hero />
       <AboutMe />
       <Experience />

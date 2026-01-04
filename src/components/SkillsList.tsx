@@ -9,8 +9,16 @@ interface SkillsListProps {
 const SkillsList: React.FC<SkillsListProps> = ({ src, skill }) => {
   return (
     <span className="flex items-center gap-1">
-      <Image className="" src={src} alt="Checkmark Icon" width={20} height={20} />
-      <p className="font-robotoMono font-light text-base md:text-lg lg:text-xl">{skill}</p>
+      <Image
+        className=""
+        src={src}
+        alt="Checkmark Icon"
+        width={20}
+        height={20}
+      />
+      <p className="font-robotoMono font-light text-base md:text-lg lg:text-xl 2xl:text-3xl">
+        {skill}
+      </p>
     </span>
   );
 };
