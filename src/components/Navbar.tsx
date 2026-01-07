@@ -54,7 +54,9 @@ const Navbar = () => {
         {animations.map((animation, i) => (
           <span
             key={i}
-            className={`w-[2px] md:w-[3px] ${i === 2 ? "h-[10px] md:h-[12px]" : "h-[6px] md:h-[8px]"}
+            className={`w-[2px] md:w-[3px] ${
+              i === 2 ? "h-[10px] md:h-[12px]" : "h-[6px] md:h-[8px]"
+            }
           bg-blue-400 rounded-sm origin-center
           transition-transform duration-200
           shadow-[0_0_6px_rgba(34,197,94,0.6)]
@@ -71,7 +73,7 @@ const Navbar = () => {
       {/* Theme Toggle */}
       <button onClick={toggleTheme}>
         <Image
-          src={theme === "light" ? sun : moon}
+          src={theme === "light" ? moon : sun}
           alt="Toggle Theme"
           className="w-5 h-5 md:w-6 md:h-6 2xl:w-8 2xl:h-8 hover:opacity-80 transition"
         />

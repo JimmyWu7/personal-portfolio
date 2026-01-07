@@ -12,7 +12,7 @@ const Experience = () => {
       <div className="flex flex-col items-center justify-center gap-y-8">
         <ExperienceCard
           role="Full Stack Mobile Developer"
-          company="SpareWork • 2025"
+          company="Sparework • 2025"
           desc="Built a cross-platform real-time communication app with group calling, 
           integrating voice and payment APIs."
         />
