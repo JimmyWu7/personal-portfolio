@@ -50,7 +50,7 @@ const Navbar = () => {
     ];
 
     return (
-      <div className="flex items-center gap-[2px] md:gap-[3px] h-[20px]">
+      <div className="flex items-center gap-[3px] md:gap-[4px] h-[20px]">
         {animations.map((animation, i) => (
           <span
             key={i}
@@ -69,20 +69,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-3 right-3 md:top-4 md:right-4 lg:top-6 lg:right-6 2xl:top-8 2xl:right-8 z-50 flex flex-col justify-center items-center gap-4">
+    <nav className="fixed top-4 right-4 md:top-5 md:right-5 lg:top-6 lg:right-6 2xl:top-8 2xl:right-8 z-50 flex flex-col justify-center items-center gap-4">
       {/* Theme Toggle */}
       <button onClick={toggleTheme}>
         <Image
           src={theme === "light" ? moon : sun}
           alt="Toggle Theme"
-          className="w-5 h-5 md:w-6 md:h-6 2xl:w-8 2xl:h-8 hover:opacity-80 transition"
+          className="w-7 h-7 md:w-8 md:h-8 2xl:w-9 2xl:h-9 hover:opacity-80 transition"
         />
       </button>
 
       {/* Audio Toggle */}
       <button
         onClick={toggleAudio}
-        className="flex items-center justify-center w-5 h-5 md:w-7 md:h-7 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 hover:bg-gray-200 rounded transition"
+        className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 2xl:w-11 2xl:h-11 hover:bg-gray-200 rounded transition"
       >
         <SoundWave playing={isPlaying} />
       </button>

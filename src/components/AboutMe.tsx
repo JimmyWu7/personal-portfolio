@@ -45,7 +45,7 @@ const AboutMe = () => {
           </div>
         </div>
         {/* Description Text */}
-        <div className="flex-1 font-robotoMono text-base md:text-lg 2xl:text-2xl space-y-4 px-6 max-w-xl md:max-w-3xl 2xl:max-w-4xl">
+        <div className="flex-1 text-center md:text-left font-robotoMono text-base md:text-lg 2xl:text-2xl space-y-4 px-4 md:px-6 max-w-xs md:max-w-3xl 2xl:max-w-4xl">
           <p>
             <span className="inline-block hover:animate-wave transition-all duration-300 ease-in-out">
               👋

@@ -33,7 +33,7 @@ const Projects = () => {
             desc="Resume Analyzer Tool"
             extras="Vite, Reactjs, JavaScript, Tailwind CSS, ExpressJs"
           />
-          <ProjectCard
+          {/* <ProjectCard
             src={
               theme === "light" ? PersonalPortfolioLight : PersonalPortfolioDark
             }
@@ -41,7 +41,7 @@ const Projects = () => {
             name="Personal Portfolio"
             desc="Portfolio Website"
             extras="Nextjs, TypeScript, Tailwind CSS"
-          />
+          /> */}
           <ProjectCard
             src={BullsParkingFinder}
             link="https://github.com/JimmyWu7/BullsParkingFinder"

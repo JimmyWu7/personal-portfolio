@@ -6,14 +6,14 @@ export type Anime = {
 
 export const currentlyWatching: Anime[] = [
   {
-    title: "One Punch Man",
-    image: "/anime/one-punch-man.jpg",
-    status: "Episode 7",
+    title: "Jujutsu Kaisen Season 3",
+    image: "/anime/jujutsu-kaisen-s3.jpg",
+    status: "Episode 3",
   },
   {
-    title: "Gachiakuta",
-    image: "/anime/gachiakuta.png",
-    status: "Episode 22",
+    title: "Frieren",
+    image: "/anime/frieren.jpg",
+    status: "Episode 2",
   },
 ];
 
@@ -85,5 +85,25 @@ export const completed: Anime[] = [
   {
     title: "Bakugan",
     image: "/anime/bakugan.jpg",
+  },
+  {
+    title: "Gachiakuta",
+    image: "/anime/gachiakuta.png",
+  },
+  {
+    title: "One Punch Man",
+    image: "/anime/one-punch-man.jpg",
+  },
+  {
+    title: "Food Wars!: Shokugeki no Soma",
+    image: "/anime/food-wars-fifth-plate.jpg",
+  },
+  {
+    title: "Ninja Kamui",
+    image: "/anime/ninja-kamui.jpg",
+  },
+  {
+    title: "Re:Monster",
+    image: "/anime/remonster.png",
   },
 ];

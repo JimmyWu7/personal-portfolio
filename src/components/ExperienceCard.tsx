@@ -44,7 +44,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         <h3 className="text-lg md:text-xl 2xl:text-3xl font-rubik font-bold">
           {role}
         </h3>
-        <p className="text-base md:text-lg 2xl:text-2xl font-robotoMono font-semibold">
+        <p className="text-balance text-base md:text-lg 2xl:text-2xl font-robotoMono font-semibold">
           {company}
         </p>
         <p className="text-sm md:text-base 2xl:text-xl font-rubik font-light">

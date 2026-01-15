@@ -13,8 +13,8 @@ const AnimeCard = ({ title, image, status }: Props) => {
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="fill"
+          fill
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 20vw, 14vw"
           className="rounded-xl object-cover shadow-lg duration-300 ease-in-out transform hover:scale-105"
         />
       </div>
