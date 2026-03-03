@@ -8,7 +8,7 @@ export const currentlyWatching: Anime[] = [
   {
     title: "Jujutsu Kaisen Season 3",
     image: "/anime/jujutsu-kaisen-s3.jpg",
-    status: "Episode 3",
+    status: "Episode 8",
   },
   {
     title: "Frieren",

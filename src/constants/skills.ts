@@ -1,0 +1,47 @@
+// /constants/skills.ts
+
+export const skills = {
+  languages: [
+    "Python",
+    "HTML",
+    "JavaScript",
+    "TypeScript",
+    "Dart",
+    "PHP",
+    "C",
+    "Scala",
+    "MySQL",
+    "PostgreSQL",
+  ],
+  frameworks: [
+    "Nextjs",
+    "React Native",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Flask",
+    "Django",
+  ],
+  libraries: [
+    "Reactjs",
+    "Nodejs",
+    "Better Auth",
+    "PyTorch",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn",
+    "Keras",
+  ],
+  tools: [
+    "GIT",
+    "GitHub",
+    "VS Code",
+    "Cursor",
+    "Android Studio",
+    "PostMan",
+    "Docker",
+    "Expo Go",
+    "Microsoft Azure",
+    "Cloudflare R2",
+    "Vercel",
+  ],
+};

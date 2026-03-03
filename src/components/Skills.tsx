@@ -5,6 +5,7 @@ import checkMarkIconDark from "../assets/icons/checkmark-dark.svg";
 import checkMarkIconLight from "../assets/icons/checkmark-light.svg";
 import SkillsList from "./SkillsList";
 import { useTheme } from "./ThemeContext";
+import { skills } from "@/constants/skills";
 
 const Skills = () => {
   const { theme } = useTheme();
@@ -14,44 +15,15 @@ const Skills = () => {
       <h1 className="font-rubik text-center text-3xl font-extrabold uppercase md:text-5xl 2xl:text-7xl mb-8 md:mb-14">
         Skills
       </h1>
-      <div className="flex flex-wrap justify-evenly self-center gap-8 max-w-[26ch] md:max-w-fit lg:gap-12">
+      <div className="flex flex-wrap justify-evenly self-center gap-4 max-w-[26ch] md:max-w-fit lg:gap-8">
         {/* Languages */}
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Python"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="HTML"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="JavaScript"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="TypeScript"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Dart"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="PHP"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="C"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Scala"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="MySQL"
-        />
+        {skills.languages.map((skill) => (
+          <SkillsList
+            key={skill}
+            src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+            skill={skill}
+          />
+        ))}
       </div>
       <hr
         className={`${
@@ -60,26 +32,13 @@ const Skills = () => {
       />
       <div className="flex flex-wrap justify-evenly self-center gap-8 max-w-[26ch] md:max-w-fit lg:gap-12">
         {/* Frameworks */}
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Nextjs"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="React Native"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Tailwind CSS"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Flask"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Django"
-        />
+        {skills.frameworks.map((skill) => (
+          <SkillsList
+            key={skill}
+            src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+            skill={skill}
+          />
+        ))}
       </div>
       <hr
         className={`${
@@ -88,34 +47,13 @@ const Skills = () => {
       />
       <div className="flex flex-wrap justify-evenly self-center gap-8 max-w-[26ch] md:max-w-fit lg:gap-12">
         {/* Libraries */}
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Reactjs"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Nodejs"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="PyTorch"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Pandas"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="NumPy"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Scikit-learn"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Keras"
-        />
+        {skills.libraries.map((skill) => (
+          <SkillsList
+            key={skill}
+            src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+            skill={skill}
+          />
+        ))}
       </div>
 
       <hr
@@ -125,38 +63,13 @@ const Skills = () => {
       />
       <div className="flex flex-wrap justify-evenly self-center gap-8 max-w-[26ch] md:max-w-fit lg:gap-12">
         {/* Tools */}
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="GIT"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="GitHub"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="VS Code"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Android Studio"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="PostMan"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Docker"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Expo Go"
-        />
-        <SkillsList
-          src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
-          skill="Microsoft Azure"
-        />
+        {skills.tools.map((skill) => (
+          <SkillsList
+            key={skill}
+            src={theme === "light" ? checkMarkIconLight : checkMarkIconDark}
+            skill={skill}
+          />
+        ))}
       </div>
     </div>
   );

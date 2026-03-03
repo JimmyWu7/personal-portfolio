@@ -62,7 +62,7 @@ const AboutMe = () => {
             enhance the user experience.
           </p>
           <p>
-            When I'm not coding, you can find me playing Brawl Stars, Pokemon
+            When I'm not coding, you can find me playing Brawl Stars, Clash of Clans, Pokemon
             TCG Pocket, watching{" "}
             <Link
               href="/anime"

@@ -12,9 +12,9 @@ const Experience = () => {
       <div className="flex flex-col items-center justify-center gap-y-8">
         <ExperienceCard
           role="Full Stack Mobile Developer"
-          company="Sparework • 2025"
-          desc="Built a cross-platform real-time communication app with group calling, 
-          integrating voice and payment APIs."
+          company="SpareWork Community Services Inc. • 2025"
+          desc="Contributed to FamTok, a cross-platform real-time communication app with one-to-one and group calling. Integrated third-party voice and payment APIs to enhance functionality."
+          appUrl="https://play.google.com/store/apps/details?id=com.famtok.app"
         />
         <ExperienceCard
           role="Backend Developer Intern"

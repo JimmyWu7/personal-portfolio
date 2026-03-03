@@ -24,7 +24,7 @@ const Hero = () => {
   const [paused, setPaused] = useState(false); // Pause state
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const profileImages = [Profile1, Profile2, Profile3, Profile4];
+  const profileImages = [Profile2, Profile1, Profile3, Profile4];
 
   // Automatically cycle images
   useEffect(() => {

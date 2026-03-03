@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-
+import { ExternalLink } from "lucide-react";
 import badgeDark from "../assets/icons/badge-dark.svg";
 import badgeLight from "../assets/icons/badge-light.svg";
 
@@ -15,6 +15,7 @@ interface ExperienceCardProps {
   desc: string;
   certificateUrl?: string; // Optional
   referenceUrl?: string; // Optional
+  appUrl?: string; // Optional
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -25,6 +26,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   desc,
   certificateUrl,
   referenceUrl,
+  appUrl,
 }) => {
   const { theme } = useTheme();
   return (
@@ -51,18 +53,19 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           {desc}
         </p>
         {/* Add document links section */}
-        {(certificateUrl || referenceUrl) && (
+        {(certificateUrl || referenceUrl || appUrl) && (
           <div className="flex gap-4 justify-center md:justify-start">
             {certificateUrl && (
               <a
                 href={certificateUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-sm md:text-base 2xl:text-xl font-rubik underline ${
+                className={`inline-flex items-center gap-1 text-sm md:text-base 2xl:text-xl font-rubik underline ${
                   theme === "light" ? "text-[#1E1E1E]" : "text-white"
                 }`}
               >
                 View Certificate
+                <ExternalLink size={16} strokeWidth={2} />
               </a>
             )}
             {referenceUrl && (
@@ -70,11 +73,25 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 href={referenceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-sm md:text-base 2xl:text-xl font-rubik underline ${
+                className={`inline-flex items-center gap-1 text-sm md:text-base 2xl:text-xl font-rubik underline ${
                   theme === "light" ? "text-[#1E1E1E]" : "text-white"
                 }`}
               >
                 Reference Letter
+                <ExternalLink size={16} strokeWidth={2} />
+              </a>
+            )}
+            {appUrl && (
+              <a
+                href={appUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-1 text-sm md:text-base 2xl:text-xl font-rubik underline ${
+                  theme === "light" ? "text-[#1E1E1E]" : "text-white"
+                }`}
+              >
+                View App
+                <ExternalLink size={16} strokeWidth={2} />
               </a>
             )}
           </div>
