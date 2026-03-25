@@ -22,7 +22,8 @@ export const skills = {
     "Django",
   ],
   libraries: [
-    "Reactjs",
+    "React",
+    "Threejs",
     "Nodejs",
     "Better Auth",
     "PyTorch",

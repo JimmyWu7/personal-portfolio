@@ -9,6 +9,7 @@ import FisionTech from "../assets/projects/fisiontech-logo.png";
 import NBAMVPPredictor from "../assets/projects/NBAMVPPredictor.jpg";
 import DevscopeLight from "../assets/projects/Devscope-Light.png";
 import DevscopeDark from "../assets/projects/Devscope-Dark.png";
+import Dinkify from "../assets/projects/Dinkify.png";
 import PersonalPortfolioDark from "../assets/projects/Personal-Portfolio-Dark.png";
 import AIResumeAnalyzerLight from "../assets/projects/AI-Resume-Analyzer-Light.png";
 import AIResumeAnalyzerDark from "../assets/projects/AI-Resume-Analyzer-Dark.png";
@@ -26,6 +27,13 @@ const Projects = () => {
       </h1>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12 2xl:gap-24">
+          <ProjectCard
+            src={Dinkify}
+            link="https://dinkify.vercel.app/"
+            name="Dinkify"
+            desc="3D Shopping Experience"
+            extras="Next.js, React, TypeScript, Tailwind CSS, React Three Fiber, Three.js"
+          />
           <ProjectCard
             src={theme === "light" ? DevscopeLight : DevscopeDark}
             link="https://devscope-flame.vercel.app/"

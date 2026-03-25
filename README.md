@@ -1,4 +1,4 @@
-### Deployed at: https://jimmywu7.github.io/personal-portfolio/
+### Deployed at: [jimmywu7.com](https://jimmywu7.github.io/personal-portfolio/)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
